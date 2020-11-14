@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Sancoale Softened';
+    src: url('SancoaleSoftenedBold.woff2') format('woff2'),
+        url('SancoaleSoftenedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sancoale Softened';
+    src: url('SancoaleSoftenedRegular.woff2') format('woff2'),
+        url('SancoaleSoftenedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
