@@ -100,8 +100,48 @@ let items = [
 
 ]
 
-let start = function(){
-    console.log('init')
+$(document).ready(function(){
+
+    // jQuery methods go here...
+
+    $( "#target" ).click(function() {
+        transitionOne();
+    });
+
+    $( "#botton_two" ).click(function() {
+        transitionTwo();
+    });
+  
+});
+
+
+let transitionOne = function (){
+    $( "#target" ).addClass( "animate__animated  animate__fadeOut" );
+    $( "#banner_one" ).addClass( "animate__animated animate__slideOutRight animate__faster" );
+
+    setTimeout(() => {
+       // $("#two").fadeIn()
+        $("#two").css("display", "grid");
+        $('#botton_two').addClass("animate__animated animate__fadeIn")
+        $('#banner_two').addClass("animate__animated animate__slideInUp animate__faster")
+        $("#one").css("display", "none");
+    }, 500);
 }
 
-start();
+let transitionTwo = function(){
+    $('#botton_two').removeClass("animate__animated animate__fadeIn")
+    $('#banner_two').removeClass("animate__animated animate__slideInUp animate__faster")
+    $( "#botton_two" ).addClass( "animate__animated  animate__fadeOutDownBig" );
+    $( "#banner_two" ).addClass( "animate__animated animate__fadeOut animate__faster" );
+
+    setTimeout(() => {
+        // $("#two").fadeIn()
+         $("#three").css("display", "grid");
+         $('#mapThree').addClass("animate__animated animate__fadeIn")
+         $('#alertThree').addClass("animate__animated animate__fadeInRightBig animate__faster")
+         $("#two").css("display", "none");
+     }, 500);
+
+}
+
+  
