@@ -237,6 +237,7 @@ body {
   bottom: 100px;
   padding: 15px;
   z-index: 10;
+  display: none;
 }
 
 .container__map__info__header {
